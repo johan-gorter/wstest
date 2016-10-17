@@ -1,0 +1,35 @@
+.background {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: rotate(0deg);
+}
+
+.body {
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  right: -50px;
+  height: 50px;
+  border-radius: 0 0 50px 50px;
+  background-color: red;
+}
+
+.head {
+  position: absolute;
+  bottom: 0px;
+  width: 40px;
+  left: 20px;
+  height: 20px;
+  border-radius: 20px 20px 0 0;
+  background-color: red;
+}
