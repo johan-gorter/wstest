@@ -15,6 +15,7 @@ app.ws.use(route.all('/', function* (next:any) {
 
   this.websocket.on('close', function() {
     console.log('Client disconnected');
+    websockets.splice(websockets.indexOf(this.websocket), 1);
   });
 
   console.log('Client connected');
